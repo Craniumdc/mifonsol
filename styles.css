@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #032B44;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-image {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.home-background {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-name {
+    margin-right: auto;
+    font-size: 24px;
+    color: #fff;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff;
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.nav-menu.active {
+    right: 0; 
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ffcc00; /* Brighter color for links */
+    font-weight: bold; 
+    font-size: 20px; /* Larger font size for better visibility */
+    display: block; 
+    margin: 15px 0; /* Increased space between links */
+}
+
+.close-btn {
+    cursor: pointer;
+    color: #ffcc00; /* Color for close button */
+    font-size: 24px;
+    margin-bottom: 20px; 
+}
+
+.how-to-buy-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.how-to-buy-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px; /* Much larger font size */
+    color: #ffcc00; /* Brighter color */
+    font-weight: bold; /* Bolder text */
+}
+
+.how-to-buy-header h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px; /* Larger font size */
+    color: #ffcc00; /* Brighter color */
+    font-weight: bold; /* Bolder text */
+}
+
+.buy-options {
+    display: flex;
+    flex-wrap: wrap; /* Allow multiple items per row */
+    justify-content: center;
+}
+
+.option {
+    background-color: #673c3c; /* Example color */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px; /* Fixed width for each option */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff; /* Bright color for text */
+}
+
+.option:hover {
+    border-color: #ccc;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px; 
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+}
